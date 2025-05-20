@@ -21,9 +21,12 @@ jobs:
         setup-command: ''
         command: javac App.java && java App
         input: |-
-          1
-          1
-        expected-output: '2'
+          6
+          4
+        expected-output: |-
+          10
+          24
+          2
         comparison-method: contains
         timeout: 10
     - name: Autograding Reporter
