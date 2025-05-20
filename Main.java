@@ -20,15 +20,13 @@ class Calculate implements Calculator {
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter two numbers: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
 
         Calculator math = new Calculate();
-        System.out.println("Numbers: " + a + ", " + b + "\n============");
-        System.out.println("Addition: " + math.add(a, b));
-        System.out.println("Multiplication: " + math.multi(a, b));
-        System.out.println("Subtraction: " + Calculator.subtract(a, b));
+        System.out.println(math.add(a, b));
+        System.out.println(math.multi(a, b));
+        System.out.println(Calculator.subtract(a, b));
         sc.close();
     }
 }
