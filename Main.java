@@ -29,5 +29,6 @@ public class Main {
         System.out.println("Addition: " + math.add(a, b));
         System.out.println("Multiplication: " + math.multi(a, b));
         System.out.println("Subtraction: " + Calculator.subtract(a, b));
+        sc.close();
     }
 }
